@@ -1,4 +1,4 @@
-/* 
+/*
     GLOBAL ELEMENTS
 */
 /* Import fonts */
@@ -28,7 +28,7 @@ a {
     outline: none !important;
 }
 
-/* 
+/*
     PAGES
 */
 
@@ -45,31 +45,24 @@ a {
 
 .image-container {
     position: relative;
-    display: flex;
 }
 
 .mobile-image-container {
     display: none;
     position: relative;
-    overflow: hidden;
     width: 100%;
-    margin-bottom:0;
-    padding-bottom: 0;
 }
 
-.desktop-image {
-    max-width: 100%;
-    z-index: 0;
-}
-
+/*
+    Images fill their container exactly, and display: block removes
+    the inline baseline gap that previously caused gaps between images.
+    This also makes position: absolute button overlays reliable at any screen size.
+*/
+.desktop-image,
 .mobile-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    margin-bottom:0;
-    padding-bottom: 0;
-    vertical-align: bottom;
+    height: auto;
+    display: block;
 }
 
 .button {
@@ -82,10 +75,6 @@ a {
 }
 
 /* Index page */
-
-.index-image-4 {
-    margin-top: -2.1%;
-}
 
 .index-camping-button-1 {
     position: absolute;
@@ -144,28 +133,7 @@ a {
     height: 1.45%;
 }
 
-.camping-image-1 {
-    margin-top: -1.1%;
-}
-
-.camping-image-2 {
-    margin-top: -3.6%;
-}
-
-/* Shop page */
-.shop-image-1 {
-    margin-bottom: -10%;
-}
-
-.shop-image-2 {
-    margin-bottom: -3%;
-}
-
 /* Workshop page */
-.workshop-image {
-    margin-top: 0%;
-}
-
 .workshop-instagram-button {
     position: absolute;
     bottom: 9.9%;
@@ -182,16 +150,6 @@ a {
     height: 5.8%;
 }
 
-/* Events */
-.events-image-2 {
-    margin-top: -4.1%;
-}
-
-/* Contact */
-.contact-image-2 {
-    margin-top: -2.7%;
-}
-
 /* Legal mentions */
 .legal-mentions {
     padding: 5px;
@@ -199,7 +157,7 @@ a {
     color: #EC872B;
 }
 
-/* 
+/*
     INCLUDES
 */
 
@@ -219,7 +177,6 @@ a {
 .menu-logo-image {
     max-width: 35%;
 }
-
 
 .mobile-navbar-toggle {
     display: none;
@@ -384,7 +341,6 @@ a {
     height: 250px;
 }
 
-
 .footer-information-wrapper {
     display: flex;
     align-items: center;
@@ -414,7 +370,6 @@ a {
 
 .footer-image-container {
     position: relative;
-    display: flex;
 }
 
 @media only screen and (max-width: 768px) {
@@ -428,9 +383,8 @@ a {
     }
 
     .footer-logo-container {
-        display : none;
+        display: none;
     }
-
 
     .footer-information-container {
         font-size: 16px;
