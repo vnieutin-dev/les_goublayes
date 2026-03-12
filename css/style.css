@@ -258,110 +258,6 @@ a {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #menu-wrapper {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu-logo-container,
-  .desktop-navbar {
-    display: none;
-  }
-
-  .mobile-navbar-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    margin-right: 10px;
-    width: 42px;
-    height: 42px;
-    font-size: 38px;
-    color: var(--color-orange);
-  }
-
-  .image-container {
-    display: none;
-  }
-
-  .mobile-image-container {
-    display: block;
-  }
-
-  .index-camping-button-1 {
-    position: absolute;
-    top: 8.6%;
-    left: 37.4%;
-    width: 26.4%;
-    height: 1.1%;
-  }
-
-  .index-shop-button-1 {
-    position: absolute;
-    top: 9.75%;
-    left: 39.5%;
-    width: 22.3%;
-    height: 1.1%;
-  }
-
-  .index-events-button-1 {
-    position: absolute;
-    top: 11%;
-    left: 36.2%;
-    width: 28.8%;
-    height: 1.1%;
-  }
-
-  .index-camping-button {
-    position: absolute;
-    top: 51.5%;
-    right: 7.2%;
-    width: 20.8%;
-    height: 1.5%;
-  }
-
-  .index-shop-button {
-    position: absolute;
-    top: 66%;
-    left: 8.4%;
-    width: 21%;
-    height: 1.5%;
-  }
-
-  .index-events-button {
-    position: absolute;
-    top: 94.2%;
-    left: 11.05%;
-    width: 21%;
-    height: 1.5%;
-  }
-
-  .camping-shop-button {
-    position: absolute;
-    top: 38.1%;
-    left: 33.71%;
-    width: 13.1%;
-    height: 0.8%;
-  }
-
-  .workshop-instagram-button {
-    position: absolute;
-    top: 77.1%;
-    left: 18.5%;
-    width: 24.6%;
-    height: 5.6%;
-  }
-
-  .workshop-store-button {
-    position: absolute;
-    top: 84.7%;
-    left: 18.5%;
-    width: 22.6%;
-    height: 5.6%;
-  }
-}
-
 /* Footer */
 
 #footer-wrapper {
@@ -420,6 +316,102 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  #menu-wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu-logo-container,
+  .desktop-navbar {
+    display: none;
+  }
+
+  .mobile-navbar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+    font-size: 38px;
+    color: var(--color-orange);
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .mobile-image-container {
+    display: block;
+  }
+
+  .index-camping-button-1 {
+    top: 8.6%;
+    left: 37.4%;
+    width: 26.4%;
+    height: 1.1%;
+  }
+
+  .index-shop-button-1 {
+    top: 9.75%;
+    left: 39.5%;
+    width: 22.3%;
+    height: 1.1%;
+  }
+
+  .index-events-button-1 {
+    top: 11%;
+    left: 36.2%;
+    width: 28.8%;
+    height: 1.1%;
+  }
+
+  .index-camping-button {
+    top: 51.5%;
+    right: 7.2%;
+    left: unset;
+    width: 20.8%;
+    height: 1.5%;
+  }
+
+  .index-shop-button {
+    top: 66%;
+    left: 8.4%;
+    width: 21%;
+    height: 1.5%;
+  }
+
+  .index-events-button {
+    top: 94.2%;
+    left: 11.05%;
+    width: 21%;
+    height: 1.5%;
+  }
+
+  .camping-shop-button {
+    top: 38.1%;
+    left: 33.71%;
+    width: 13.1%;
+    height: 0.8%;
+  }
+
+  .workshop-instagram-button {
+    top: 77.1%;
+    left: 18.5%;
+    right: unset;
+    width: 24.6%;
+    height: 5.6%;
+  }
+
+  .workshop-store-button {
+    top: 84.7%;
+    left: 18.5%;
+    right: unset;
+    width: 22.6%;
+    height: 5.6%;
+  }
+
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
