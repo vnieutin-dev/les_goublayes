@@ -336,6 +336,9 @@ a {
     height: 42px;
     font-size: 38px;
     color: var(--color-orange);
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   .image-container {
