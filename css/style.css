@@ -6,6 +6,10 @@
   --color-cream: #fffcde;
   --color-gold: #f9ce76;
   --color-dark: #1f1f1f;
+
+  /* Image overlap offsets — % of container width; update if source images change */
+  --events-image-overlap: -4.1%;
+  --contact-image-overlap: -2.9%;
 }
 
 /*
@@ -17,6 +21,7 @@
     url("fonts/din_condensed_bold-webfont.woff2") format("woff2"),
     url("fonts/din_condensed_bold-webfont.woff") format("woff");
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -162,12 +167,12 @@ a {
 
 /* Events */
 .events-image-2 {
-  margin-top: -4.1%;
+  margin-top: var(--events-image-overlap);
 }
 
 /* Contact */
 .contact-image-2 {
-  margin-top: -2.9%;
+  margin-top: var(--contact-image-overlap);
 }
 
 /* Legal mentions */
@@ -298,6 +303,10 @@ a {
 
 .address-container {
   margin-bottom: 20px;
+}
+
+.footer-farm-name {
+  font-weight: bold;
 }
 
 .footer-links-container {
