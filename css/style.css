@@ -51,11 +51,15 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: linear-gradient(to bottom, var(--color-cream), var(--color-gold));
 }
 
 .page-images-container {
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
+  margin-inline: auto;
+  width: 100%;
 }
 
 .image-container {
