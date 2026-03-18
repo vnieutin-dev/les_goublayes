@@ -2,7 +2,7 @@ function loadMenu() {
     fetch('includes/menu.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('menu-wrapper').innerHTML = data;
+            document.getElementById('menu-container').innerHTML = data;
             initMobileMenu();
         })
         .catch(error => {

@@ -10,6 +10,7 @@
   /* Image overlap offsets — % of container width; update if source images change */
   --events-image-overlap: -4.1%;
   --contact-image-overlap: -2.9%;
+  --max-content-width: 1400px;
 }
 
 /*
@@ -33,7 +34,10 @@ html {
 }
 
 body {
-  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -56,6 +60,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: var(--max-content-width);
 }
 
 .page-images-container {
@@ -194,14 +199,22 @@ a {
 */
 
 /* Menu */
-#menu-wrapper {
+#menu-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-cream);
+  z-index: 10;
+}
+
+.menu-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--color-cream);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  max-width: var(--max-content-width);
+  width: 100%;
 }
 
 .menu-logo-image {
