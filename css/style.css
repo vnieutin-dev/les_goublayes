@@ -361,15 +361,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 0 10px;
     margin-right: 10px;
-    width: 42px;
-    height: 42px;
-    font-size: 30px;
+    font-size: 42px;
     color: var(--color-orange);
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  .nav-link {
+    font-size: 1.95rem;
   }
 
   .image-container {
