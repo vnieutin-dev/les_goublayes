@@ -5,7 +5,7 @@ function loadFooter() {
         .then(response => response.text()) // Convert response to text
         .then(data => {
             // Insert the loaded HTML content into the menu-container div
-            document.getElementById('footer-wrapper').innerHTML = data;
+            document.getElementById('footer-container').innerHTML = data;
         })
         .catch(error => {
             console.error('Error loading the footer:', error);

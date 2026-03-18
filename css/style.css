@@ -30,7 +30,6 @@ html {
   flex-direction: column;
   align-items: center;
   scroll-behavior: smooth;
-  background: linear-gradient(to bottom, var(--color-cream), var(--color-gold));
 }
 
 body {
@@ -38,12 +37,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 0;
   margin: 0;
   font-size: 14px;
   font-family: "dinlightBold";
   line-height: 1.60857;
   overflow-x: hidden;
+  background: linear-gradient(to bottom, var(--color-cream), var(--color-gold));
 }
 
 a {
@@ -277,22 +278,30 @@ a {
 
 /* Footer */
 
-#footer-wrapper {
+#footer-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-gold);
 }
 
-.footer-container {
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-content-width);
+  width: 100%;
+}
+
+.footer-text-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding-top: 20px;
   line-height: 35px;
   color: var(--color-orange);
-  background-color: var(--color-gold);
 }
 
-.footer-container > * {
+.footer-text-container > * {
   flex-grow: 1;
 }
 
