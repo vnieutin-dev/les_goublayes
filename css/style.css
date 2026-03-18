@@ -42,7 +42,6 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: "dinlightBold";
-  line-height: 1.60857;
   overflow-x: hidden;
 }
 
@@ -133,7 +132,9 @@ a {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Index page */
@@ -290,7 +291,7 @@ a {
 }
 
 .nav-link {
-  font-size: 22px;
+  font-size: 1.7rem;
   font-weight: 600;
   color: var(--color-orange);
 }
