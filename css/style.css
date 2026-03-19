@@ -100,6 +100,7 @@ a {
 }
 
 .button:hover {
+  background-color: var(--color-orange);
   opacity: 0.1;
 }
 
@@ -141,8 +142,8 @@ a {
 
 .index-camping-button-1 {
   position: absolute;
-  top: 65.8%;
-  left: 16.9%;
+  top: 65.85%;
+  left: 16.85%;
   width: 12.55%;
   height: 6.6%;
 }
