@@ -359,7 +359,7 @@ a {
 .footer-information-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .footer-information-container {
@@ -383,6 +383,7 @@ a {
 }
 
 .footer-link {
+  width: -webkit-fit-content;
   width: fit-content;
   color: var(--color-orange);
 }
