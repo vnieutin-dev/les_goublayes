@@ -227,18 +227,66 @@ a {
   width: 7.4%;
   height: 0.75%;
 }
-.camping-link {
+
+.camping-bock {
   position: absolute;
   font-style: italic;
-  background-color: red;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4d532c;
+  background-color: var(--color-orange);
 }
 
-.camping-link-erquy {
-  top: 25.68%;
-  left: 40.35%;
+.camping-link {
+  position: absolute;
+  border-radius: 5px;
 }
 
-.camping-link-pleneuf {
+.camping-link:hover {
+  opacity: 0.2;
+  background-color: black;
+}
+
+.camping-phone-roulemapoule {
+  top: 92.65%;
+  left: 65.5%;
+  width: 8.2%;
+  height: 0.6%;
+}
+
+.camping-phone-capevasion {
+  top: 95.13%;
+  left: 65.5%;
+  width: 8.2%;
+  height: 0.6%;
+}
+
+.camping-web-erquy {
+  top: 96.8%;
+  left: 66.9%;
+  width: 10.9%;
+  height: 0.6%;
+}
+
+.camping-phone-erquy {
+  top: 96.8%;
+  left: 78.5%;
+  width: 8.2%;
+  height: 0.6%;
+}
+
+.camping-web-pleneuf {
+  top: 97.4%;
+  left: 67.9%;
+  width: 14.6%;
+  height: 0.6%;
+}
+
+.camping-phone-pleneuf {
+  top: 97.4%;
+  left: 83.1%;
+  width: 8.2%;
+  height: 0.6%;
 }
 
 /* Workshop page */
@@ -532,6 +580,54 @@ a {
     height: 0.65%;
   }
 
+  .camping-link {
+    background-color: red;
+    opacity: .5;
+  }
+
+  .camping-phone-roulemapoule {
+    top: 92.53%;
+    left: 53.3%;
+    width: 13.6%;
+    height: 0.55%;
+  }
+
+  .camping-phone-capevasion {
+    top: 94.52%;
+    left: 53.2%;
+    width: 13.6%;
+    height: 0.55%;
+  }
+
+  .camping-web-erquy {
+    top: 96.55%;
+    left: 49%;
+    width: 19.4%;
+    height: 0.6%;
+  }
+
+  .camping-phone-erquy {
+    top: 96.55%;
+    left: 69.7%;
+    width: 15%;
+    height: 0.6%;
+  }
+
+  .camping-web-pleneuf {
+    top: 97.55%;
+    left: 49%;
+    width: 25.7%;
+    height: 0.6%;
+  }
+
+  .camping-phone-pleneuf {
+    top: 97.55%;
+    left: 75.8%;
+    width: 14.9%;
+    height: 0.6%;
+  }
+
+  /* Workshop */
   .workshop-instagram-button {
     top: 77.1%;
     left: 18.5%;
