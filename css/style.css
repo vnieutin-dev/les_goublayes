@@ -143,18 +143,18 @@ a {
   height: 100%;
 }
 
-.button {
-  background-color: red;
-  opacity: 0.2;
+.button-link {
+  position: absolute;
+  /* background-color: red;
+  opacity: .8; */
 }
 
-.button:hover {
-  background-color: black;
+.button-link:hover {
+  background-color: white;
   opacity: 0.1;
 }
 
 /* Index page */
-
 .index-camping-button-1 {
   position: absolute;
   top: 10.55%;
@@ -213,7 +213,6 @@ a {
 
 /* Camping page */
 .camping-button-1 {
-  position: absolute;
   top: 20.05%;
   left: 41.6%;
   width: 16.8%;
@@ -221,7 +220,6 @@ a {
 }
 
 .camping-button-2 {
-  position: absolute;
   top: 25.68%;
   left: 40.35%;
   width: 7.4%;
@@ -229,22 +227,11 @@ a {
 }
 
 .camping-bock {
-  position: absolute;
   font-style: italic;
   font-size: 24px;
   font-weight: 600;
   color: #4d532c;
   background-color: var(--color-orange);
-}
-
-.camping-link {
-  position: absolute;
-  border-radius: 5px;
-}
-
-.camping-link:hover {
-  opacity: 0.2;
-  background-color: black;
 }
 
 .camping-phone-roulemapoule {
@@ -307,8 +294,44 @@ a {
 }
 
 /* Events */
-.events-image-2 {
-  margin-top: var(--events-image-overlap);
+.events-link {
+  position: absolute;
+  opacity: 1;
+}
+
+.events-link:hover {
+  opacity: .2;
+  background-color: black;
+}
+
+.events-facebook-button {
+  border-radius: 50%;
+  top: 91.57%;
+  left: 27.2%;
+  width: 3.2%;
+  height: 1.75%;
+}
+
+.events-instagram-button {
+  border-radius: 50%;
+  top: 94%;
+  left: 27.2%;
+  width: 3.4%;
+  height: 1.8%;
+}
+
+.events-phone {
+  top: 92.5%;
+  left: 53%;
+  width: 7.4%;
+  height: 0.85%;
+}
+
+.events-mail {
+  top: 93.65%;
+  left: 53%;
+  width: 14.8%;
+  height: 1%;
 }
 
 /* Contact */
@@ -580,11 +603,6 @@ a {
     height: 0.65%;
   }
 
-  .camping-link {
-    background-color: red;
-    opacity: .5;
-  }
-
   .camping-phone-roulemapoule {
     top: 92.53%;
     left: 53.3%;
@@ -641,6 +659,9 @@ a {
     width: 22.1%;
     height: 5.45%;
   }
+
+  /* Events */
+
 
   /* Footer */
   .footer-container {

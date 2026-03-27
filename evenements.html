@@ -8,7 +8,7 @@
       content="Découvrez les évènements et animations organisés à la Ferme des Goublayes à Saint-Alban, Côtes d'Armor."
     />
     <title>Les Évènements | Ferme des Goublayes</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="canonical" href="https://fermedesgoublayes.fr/evenements.html" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/toggleMobileMenu.js" defer></script>
@@ -16,17 +16,17 @@
     <script src="js/loadFooter.js" defer></script>
     <script src="js/displaySpinner.js" defer></script>
   </head>
-  
+
   <body>
     <!-- Menu placeholder -->
     <div id="menu-container"></div>
-    
+
     <div class="page-container">
       <div id="page-loader"><div class="spinner"></div></div>
       <div class="page-wrapper">
         <div class="mobile-image-container events-mobile-image">
           <img
-            src="images/evenements/Evenement-mobile.webp"
+            src="images/pages/mobile/Evenements.webp"
             class="mobile-image"
             alt="Les évènements"
             fetchpriority="high"
@@ -34,21 +34,36 @@
         </div>
         <div class="desktop-image-container">
           <img
-            src="images/evenements/Goublayons_1.webp"
+            src="images/pages/desktop/Evenements.webp"
             class="desktop-image"
             alt="Les évènements"
             fetchpriority="high"
           />
         </div>
 
-        <div class="image-container events-image-2">
-          <img
-            src="images/evenements/Goublayons_2.webp"
-            class="desktop-image"
-            alt="Les évènements"
-            loading="lazy"
-          />
-        </div>
+        <!-- Facebook -->
+        <a
+          class="events-link events-facebook-button"
+          target="_blank"
+          href="https://www.facebook.com/fermedesgoublayes/"
+        ></a>
+
+        <!-- Instagram  -->
+        <a
+          class="events-link events-instagram-button"
+          target="_blank"
+          href=""
+        ></a>
+
+        <!-- Email -->
+        <a
+          class="events-link events-mail"
+          target="_blank"
+          href="mailto:goublayonsferme@mailo.com"
+        ></a>
+
+        <!-- Téléphone -->
+        <a class="events-link events-phone" href="tel:+33678281398"></a>
       </div>
     </div>
     <div id="footer-container"></div>
