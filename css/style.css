@@ -141,11 +141,11 @@ a {
 .button-link {
   position: absolute;
   background-color: red;
-  opacity: .8;
+  opacity: 0.6;
 }
 
 .button-link:hover {
-  background-color: white;
+  background-color: black;
   opacity: 0.1;
 }
 
@@ -320,8 +320,18 @@ a {
 }
 
 /* Contact */
-.contact-image-2 {
-  margin-top: var(--contact-image-overlap);
+.contact-mail {
+  top: 68.4%;
+  left: 10.3%;
+  width: 22.85%;
+  height: 7.75%;
+}
+
+.contact-phone {
+  top: 76.95%;
+  left: 10.3%;
+  width: 11.3%;
+  height: 7.8%;
 }
 
 /* Legal mentions */
@@ -647,6 +657,20 @@ a {
 
   /* Events */
 
+  /* Contact */
+  .contact-mail {
+    top: 31.5%;
+    left: 29.9%;
+    width: 40.8%;
+    height: 3.5%;
+  }
+
+  .contact-phone {
+    top: 40.1%;
+    left: 40.3%;
+    width: 20.1%;
+    height: 3.5%;
+  }
 
   /* Footer */
   .footer-container {
