@@ -51,6 +51,7 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: "dinlight";
+  font-weight: 600;
   overflow-x: hidden;
 }
 
@@ -140,8 +141,6 @@ a {
 
 .button-link {
   position: absolute;
-  background-color: red;
-  opacity: 0.6;
 }
 
 .button-link:hover {
@@ -459,7 +458,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "dinlightBold";
   height: 100%;
 }
 
@@ -467,8 +465,22 @@ a {
   margin-bottom: 20px;
 }
 
-.footer-farm-name {
-  font-weight: bold;
+.farm-name {
+ font-family: "dinlightBold";
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container a {
+  color: var(--color-orange);
+}
+
+
+.contact-container a:hover {
+  text-decoration: underline;
 }
 
 .footer-links-container {
