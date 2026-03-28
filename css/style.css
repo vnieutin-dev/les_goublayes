@@ -366,6 +366,7 @@ a {
   display: none;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -384,10 +385,11 @@ a {
 .nav-item {
   width: fit-content;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .nav-link {
-  font-size: 1.7rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 600;
   color: var(--color-orange);
 }
@@ -500,7 +502,7 @@ a {
     justify-content: center;
     padding: 0 10px;
     margin-right: 10px;
-    font-size: 42px;
+    font-size: 35px;
     color: var(--color-orange);
     background: none;
     border: none;
@@ -508,7 +510,8 @@ a {
   }
 
   .nav-link {
-    font-size: 1.95rem;
+    font-size: 1.6rem;
+    padding: 12px 0;
   }
 
   .desktop-image-container {
