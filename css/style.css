@@ -31,11 +31,10 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font-family: "dinlight";
@@ -314,6 +313,7 @@ a {
 
 /* Legal mentions */
 .legal-mentions {
+  height: 100%;
   font-size: 1.3rem;
   padding: 0 10px;
   background-color: var(--color-cream);
@@ -448,7 +448,7 @@ a {
 }
 
 .farm-name {
-  font-weight: bolder!important;
+  font-weight: bolder !important;
 }
 
 .contact-container {
