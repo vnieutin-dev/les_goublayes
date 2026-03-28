@@ -431,15 +431,11 @@ a {
 .footer-text-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 20px;
   line-height: 35px;
   color: var(--color-orange);
   font-size: clamp(1.5rem, 3vw, 2rem);
-}
-
-.footer-text-container > * {
-  flex-grow: 1;
 }
 
 .footer-logo-container {

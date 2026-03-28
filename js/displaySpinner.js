@@ -5,12 +5,12 @@ function displaySpinner() {
       ...document.querySelectorAll('img[fetchpriority="high"]'),
     ];
 
-    // 1. Create a promise for every image
+    // Create a promise for every image
     const loadPromises = highPriorityImgs.map((img) => {
       // If already complete, just resolve
       if (img.complete) return img.decode();
 
-      // Otherwise, wait for load AND decode
+      // Otherwise, wait for load and decode
       return new Promise((resolve) => {
         img.addEventListener(
           "load",
@@ -27,10 +27,8 @@ function displaySpinner() {
 
     document.body.style.overflow = "hidden";
 
-    // 2. Use Promise.all instead of Promise.race
     Promise.all(loadPromises).then(() => {
-      // 3. The "Double rAF" ensures the browser has had a chance to
-      // actually paint the decoded pixels to the screen.
+      // The "Double rAF" ensures the browser has had a chance to actually paint the decoded pixels to the screen
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           if (!loader) return;
@@ -42,7 +40,7 @@ function displaySpinner() {
             once: true,
           });
 
-          // Safety timeout: remove if transitionend fails to fire
+          // Safety timeout
           setTimeout(() => loader.remove(), 500);
         });
       });
