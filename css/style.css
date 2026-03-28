@@ -737,5 +737,6 @@ a {
   .footer-links-container {
     line-height: 2rem;
     margin-bottom: 40px;
+    align-items: center;
   }
 }
